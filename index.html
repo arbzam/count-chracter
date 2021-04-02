@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chracter Count Tool</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- Bootsrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--/ Bootsrap css -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--/ custom css -->
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <section class="main-content">
+            <div class="container">
+                <div class="main">
+                    <h2 class="best-practice-head">
+                        Ebay Listing Guidelines
+                    </h2>
+                    <div class="para-con mb-4">
+                        <p class="first-para mb-3">
+                            With more than half of all transactions on eBay viewed on a mobile device prior to purchase, it's important to make sure your listings look great on mobile.
+                        </p>
+                        <ul class="para-con-list">
+                            <li> <i class="fas fa-circle"></i> Review your font specifications. eBay recommends using a <strong>base font size of 16 CSS pixels</strong> and sticking to one or two font sizes. Using this strategy should eliminate the need for
+                                a shopper to pinch to zoom and read content.</li>
+                            <li><i class="fas fa-circle"></i> <strong>Keep the formatting simple</strong> on a white background for easy readability. Use bullet points in items descriptions so information is easy to scan.</li>
+                            <li> <i class="fas fa-circle"></i> Text should not exceed <span>800</span> characters otherwise it will not display correctly on mobile devices.
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="enter-text">Enter text:</h2>
+                    <textarea name="chr-val" id="chr-val" class="chr-val mb-0" placeholder="Please enter Text" autofocus required></textarea>
+                    <div class="d-flex justify-content-end my-4 responsive-flex">
+                        <button type="button" class="counter mx-2" id="paste">
+                Paste text
+              </button>
+                        <button type="button" class="counter mx-2 bg-danger" id="clear-textarea" onclick="cleartextarea();">
+                Clear text
+              </button>
+                    </div>
+                    <p aria-live="polite" class="my-3"><strong> words: <span id="word-count">0</span></strong></p>
+                    <div class="d-flex justify-content-center align-items-canter mb-4">
+                        <input type="text" class="output" placeholder="---" id="show-data" />
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-2 responsive-flex">
+                        <button type="button" class="counter" id="count-chr" onclick="count_chr();">
+                count Characters
+              </button>
+                        <button type="button" class="counter mx-4 bg-danger" onclick="reset();" id="reset-btn">
+                Reset
+              </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- script files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--/ script files -->
+</body>
+
+</html>
